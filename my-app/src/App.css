@@ -1,0 +1,104 @@
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+h2 {
+  color: darkblue;
+}
+
+ul, ol {
+  margin-left: 20px;
+}
+
+.first-clicked {
+  background-color: lightblue;
+  color: navy;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.second-clicked {
+  background-color: lightgreen;
+  color: darkgreen;
+  font-style: italic;
+  text-decoration: underline;
+}
+
+button {
+  margin: 5px;
+}
+
+.goods-gallery {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.goods-gallery-title {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.goods-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.goods-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.goods-card:hover {
+  transform: scale(1.05);
+}
+
+.goods-card-image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.goods-card-details {
+  padding: 15px;
+  text-align: center;
+}
+
+.goods-card-title {
+  margin: 0 0 10px;
+  color: #333;
+}
+
+.goods-card-price {
+  font-weight: bold;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.goods-card-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.goods-card-button:hover {
+  background-color: #0056b3;
+}
+
+.goods-card {
+  display: 'flex';
+  justifyContent: 'center';
+  alignItems: 'center';
+  height: '150px';
+  width: '100%';
+}
